@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/* main - size
+/**
+ * main - size
  *
  * Description: smth
  * Return: returns zero
