@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - print all alphabets in lowercase
+ *
+ * Return: returns zero
+ */
+
 int main(void)
 {
 	char c;
@@ -8,6 +14,7 @@ int main(void)
 	{
 		putchar(c);
 	}
+	putchar('\n');
 
 	return(0);
 }
