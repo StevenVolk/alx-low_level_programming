@@ -16,10 +16,10 @@ int main(void)
 
 	for (i = 0; i < 8; i++)
 	{
-		y = 1;
-		z = 2;
+		y = i + 1;
 		for (j = y; j < 9; j++)
 		{
+			z = j + 1;
 			for (k = z; k < 10; k++)
 			{
 				if (i != j && j != k)
