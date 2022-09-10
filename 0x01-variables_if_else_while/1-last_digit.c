@@ -11,10 +11,10 @@
 int main(void)
 {
 	int n;
+	int f;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	int f;
 	f = n % 10;
 
 	if (f > 5)
@@ -29,5 +29,6 @@ int main(void)
 	{
 		printf("Last digit of %d is 0 and is 0", n);
 	}
+
 	return (0);
 }
