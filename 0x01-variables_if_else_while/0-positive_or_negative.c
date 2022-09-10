@@ -4,6 +4,7 @@
 
 /**
  * main - check positive, zero or negative
+ * @n: random number to checked
  *
  * Description: checking a number is positive, zero or negative
  * Return: returns zero
@@ -12,6 +13,7 @@
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
