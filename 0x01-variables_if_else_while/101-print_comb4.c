@@ -14,11 +14,10 @@ int main(void)
 	int y;
 	int z;
 
-	y = 1;
-	z = 2;
-
 	for (i = 0; i < 8; i++)
 	{
+		y = 1;
+		z = 2;
 		for (j = y; j < 9; j++)
 		{
 			for (k = z; k < 10; k++)
