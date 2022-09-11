@@ -21,7 +21,7 @@ int main(void)
 			{
 				for (z = 0; z < 10; z++)
 				{
-					if ((k == i) && (z > j)) || (k > i)
+					if (((k == i) && (z > j)) || (k > i))
 					{
 						putchar((i % 10) + '0');
 						putchar((j % 10) + '0');
