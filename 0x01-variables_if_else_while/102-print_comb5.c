@@ -21,23 +21,18 @@ int main(void)
 			{
 				for (z = 0; z < 10; z++)
 				{
-					if ((((k == i) && (z > j)) || (k > i)) && ((i != 9) && (j != 8)))
+					if (((k == i) && (z > j)) || (k > i))
 					{
 						putchar((i % 10) + '0');
 						putchar((j % 10) + '0');
 						putchar(' ');
 						putchar((k % 10) + '0');
 						putchar((z % 10) + '0');
+					}
+					if ((((k == i) && (z > j)) || (k > i)) && (((i ! = 9) && (j != 8))))
+					{
 						putchar(',');
 						putchar(' ');
-					}
-					else
-					{
-						putchar((i % 10) + '0');
-						putchar((j % 10) + '0');
-						putchar(' ');
-						putchar((k % 10) + '0');
-						putchar((z % 10) + '0');
 					}
 				}
 			}
