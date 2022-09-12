@@ -29,7 +29,7 @@ int main(void)
 						putchar((k % 10) + '0');
 						putchar((z % 10) + '0');
 					}
-					if ((((k == i) && (z > j)) || (k > i)) && (((i ! = 9) && (j != 8))))
+					if ((((k == i) && (z > j)) || (k > i)) && ((i ! = 9) && (j != 8)))
 					{
 						putchar(',');
 						putchar(' ');
