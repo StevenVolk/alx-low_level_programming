@@ -21,7 +21,7 @@ int main(void)
 			{
 				for (z = 0; z < 10; z++)
 				{
-					if (((k == i) && (z > j)) || (k > i))
+					if ((((k == i) && (z > j)) || (k > i)) && ((i != 9) && (j != 8)))
 					{
 						putchar((i % 10) + '0');
 						putchar((j % 10) + '0');
@@ -30,6 +30,14 @@ int main(void)
 						putchar((z % 10) + '0');
 						putchar(',');
 						putchar(' ');
+					}
+					else
+					{
+						putchar((i % 10) + '0');
+						putchar((j % 10) + '0');
+						putchar(' ');
+						putchar((k % 10) + '0');
+						putchar((z % 10) + '0');
 					}
 				}
 			}
