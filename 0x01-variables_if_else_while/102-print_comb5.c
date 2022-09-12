@@ -12,6 +12,7 @@ int main(void)
 	int j;
 	int k;
 	int z;
+	int w = 0;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -28,12 +29,14 @@ int main(void)
 						putchar(' ');
 						putchar((k % 10) + '0');
 						putchar((z % 10) + '0');
+						w = 1;
 					}
-					if ((i ! = 9) && (j != 8))
+					if ((i != 9) && (j != 8) && (w == 1))
 					{
 						putchar(',');
 						putchar(' ');
 					}
+					w = 0;
 				}
 			}
 		}
