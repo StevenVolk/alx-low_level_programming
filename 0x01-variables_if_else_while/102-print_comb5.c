@@ -31,7 +31,7 @@ int main(void)
 						putchar((z % 10) + '0');
 						w = 1;
 					}
-					if ((i != 9) && (j != 8) && (w == 1))
+					if ((w == 1) && ((i != 9) || (j != 8)))
 					{
 						putchar(',');
 						putchar(' ');
