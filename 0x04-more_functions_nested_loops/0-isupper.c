@@ -3,6 +3,7 @@
 
 /**
  * isupper - checks if a character is upper case
+ * @c: character to be checked
  *
  * Return: 1 for upper or 0 for lower
  */
