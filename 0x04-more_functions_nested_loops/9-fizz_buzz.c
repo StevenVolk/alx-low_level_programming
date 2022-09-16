@@ -2,7 +2,8 @@
 
 /**
  * main - prints 1 to 100 if 3 print Fizz if 5 print Buzz and if 3 and 5 print FizzBuzz
- * Return: 0
+ * 
+ * Return: returns 0
  */
 
 int main(void)
