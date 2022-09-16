@@ -3,6 +3,7 @@
 /**
  * print_numbers - print 1 to 9
  *
+ * @i: number to print
  * Return: returns numbers 1 to 9
  */
 
