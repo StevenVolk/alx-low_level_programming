@@ -6,7 +6,7 @@
  * Return: 1 for upper or 0 for lower
  */
 
-int _isupper(int c)
+int _isupper(char c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
