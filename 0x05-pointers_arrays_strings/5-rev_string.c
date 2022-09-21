@@ -26,7 +26,6 @@ void rev_string(char *s)
 		j++;
 	}
 	_putchar('\n');
-	_putchar('f');
 
 	while (i >= 0)
 	{
@@ -34,5 +33,4 @@ void rev_string(char *s)
 		i--;
 	}
 	_putchar('\n');
-	_putchar('r');
 }
