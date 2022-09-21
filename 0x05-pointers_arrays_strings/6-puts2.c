@@ -9,10 +9,19 @@
 
 void puts2(char *str)
 {
+	int flag = 0;
+
 	while (*str != '\0')
 	{
-		_putchar(*str);
-		str += 2;
+		if (flag == 0)
+		{
+			_putchar(*str);
+			str++;
+		}
+		else
+		{
+			str++;
+		}
 	}
 	_putchar('\n');
 }
