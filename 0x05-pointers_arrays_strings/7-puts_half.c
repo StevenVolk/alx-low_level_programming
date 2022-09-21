@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * puts_half - prints last half of string
