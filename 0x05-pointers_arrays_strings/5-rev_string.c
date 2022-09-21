@@ -21,10 +21,10 @@ void rev_string(char *s)
 	}
 	i--;
 
-	for (j = 0; j <= i/2; j++)
+	for (j = 0; j <= i / 2; j++)
 	{
 		t = s[j];
-		s[j] = s[i-j];
-		s[i-j] = t;
+		s[j] = s[i - j];
+		s[i - j] = t;
 	}
 }
