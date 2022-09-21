@@ -33,4 +33,6 @@ void rev_string(char *s)
 		i--;
 	}
 	_putchar('\n');
+
+	return
 }
