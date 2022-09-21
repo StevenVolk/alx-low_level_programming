@@ -8,11 +8,17 @@
 
 void print_rev(char *s)
 {
-	int len = strlen(*s);
+	int i = 0;
 
-	while (len > 0)
+	while (*s != '\0')
 	{
-		_putchar(s[len]);
+		i++;
+		s++;
+	}
+
+	while (i > 0)
+	{
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
