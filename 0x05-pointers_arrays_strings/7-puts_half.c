@@ -11,11 +11,12 @@ void puts_half(char *str)
 	int n;
 	int j;
 	int i = 0;
+	char *temp = str
 
-	while (*str != '\0')
+	while (*temp != '\0')
 	{
 		i++;
-		str++;
+		temp++;
 	}
 
 	n = (i - 1) / 2;
