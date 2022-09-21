@@ -22,14 +22,12 @@ void rev_string(char *s)
 
 	while (j <= i)
 	{
-		//_putchar(s[j]);
 		j++;
 	}
 	_putchar('\n');
 
 	while (i >= 0)
 	{
-		//_putchar(s[i]);
 		i--;
 	}
 	_putchar('\n');
