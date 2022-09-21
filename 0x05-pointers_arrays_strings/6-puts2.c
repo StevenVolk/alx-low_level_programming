@@ -17,10 +17,12 @@ void puts2(char *str)
 		{
 			_putchar(*str);
 			str++;
+			flag = 1;
 		}
 		else
 		{
 			str++;
+			flag = 0;
 		}
 	}
 	_putchar('\n');
