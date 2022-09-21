@@ -15,14 +15,12 @@ void print_array(int *a, int n)
 	{
 		if (i < n - 1)
 		{
-			_putchar("&a[i]: %p\n", &a[i] + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%i, ", a[i]);
 		}
 		else
 		{
-			_putchar("&a[i]: %p\n", &a[i] + '0');
+			printf("%i", a[i]);
 		}
 	}
-	_putchar('\n');
+	printf('\n');
 }
