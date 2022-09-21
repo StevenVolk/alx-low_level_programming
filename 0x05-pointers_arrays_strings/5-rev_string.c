@@ -11,7 +11,6 @@ void rev_string(char *s)
 	int i = 0;
 	int j = 0;
 	char *temp = s;
-	char *forward = s;
 
 	while (*temp != '\0')
 	{
@@ -23,10 +22,11 @@ void rev_string(char *s)
 
 	while (j <= i)
 	{
-		_putchar(forward[j]);
+		_putchar(s[j]);
 		j++;
 	}
 	_putchar('\n');
+	_putchar('f');
 
 	while (i >= 0)
 	{
@@ -34,4 +34,5 @@ void rev_string(char *s)
 		i--;
 	}
 	_putchar('\n');
+	_putchar('r');
 }
