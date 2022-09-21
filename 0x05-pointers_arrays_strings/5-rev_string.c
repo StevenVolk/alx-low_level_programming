@@ -8,6 +8,8 @@
 
 void rev_string(char *s)
 {
+	int z;
+
 	int i = 0;
 	int j = 0;
 	char *temp = s;
@@ -20,7 +22,9 @@ void rev_string(char *s)
 
 	i--;
 
-	while (j <= i)
+	z = i;
+
+	while (j <= z)
 	{
 		_putchar(s[j]);
 		j++;
