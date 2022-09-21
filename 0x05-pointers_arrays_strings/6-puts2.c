@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
- * _puts2 - writes to standard output
+ * puts2 - writes to standard output
  * @str: given string
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	while (*str != '\0')
 	{
