@@ -3,7 +3,7 @@
 /**
  * _abs - returns absolute value of number
  * @n: input number
- * 
+ *
  * Return: absolute value of number
  */
 
