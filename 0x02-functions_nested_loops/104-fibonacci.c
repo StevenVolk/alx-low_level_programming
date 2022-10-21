@@ -9,10 +9,12 @@
 int main(void)
 {
 	int i;
-	double previous, present, future;
+	double dd, previous, present, future;
 
 	previous = 0;
 	present = 1;
+	dd = 5527939700884757 + 8944394323791464;
+	printf("%f", dd);
 	for (i = 0; i < 98; i++)
 	{
 		future = previous + present;
