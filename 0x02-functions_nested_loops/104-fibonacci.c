@@ -13,7 +13,7 @@ int main(void)
 
 	previous = 0;
 	present = 1;
-	for (i = 0, i < 98, i++)
+	for (i = 0; i < 98; i++)
 	{
 		future = previous + present;
 		previous = present;
