@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the sum of even valued terms for fibonacci numbers less than 4,000,000
+ * main - finds sum of even valued terms for fibonacci numbers < 4,000,000
  *
  * Return: returns 1
  */
@@ -22,6 +22,6 @@ int main(void)
 		if (future % 2 == 0)
 			sum += future;
 	}
-	printf("%ld", sum);
+	printf("%ld\n", sum);
 	return (1);
 }
