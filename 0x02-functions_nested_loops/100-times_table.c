@@ -51,8 +51,8 @@ void print_times_table(int n)
 				{
 					l = k % 10;
 					m = k / 10;
-					q = m / 10;
-					o = m % 10;
+					q = m % 10;
+					o = m / 10;
 					_putchar('0' + o);
 					_putchar('0' + q);
 					_putchar('0' + l);
