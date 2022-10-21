@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/** main - print sum all multiples of 3 and 5 from 0 to 1024 (excluded)
+/**
+ * main - print sum all multiples of 3 and 5 from 0 to 1024 (excluded)
  *
  * Return: returns 0
  */
@@ -8,7 +9,7 @@
 int main(void)
 {
 	int i, sum;
-	
+
 	sum = 0;
 	for (i = 0; i < 1024; i++)
 	{
@@ -17,7 +18,7 @@ int main(void)
 			sum += i;
 		}
 	}
-	printf("%i\n", i);
-	
+	printf("%i\n", sum);
+
 	return (0);
 }
