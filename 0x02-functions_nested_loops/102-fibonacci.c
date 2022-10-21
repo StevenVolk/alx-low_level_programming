@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	int i, former, current, fibo;
+	int i;
+	double former, current, fibo;
 
 	former = 0;
 	current = 1;
