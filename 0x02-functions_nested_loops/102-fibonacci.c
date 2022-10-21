@@ -18,7 +18,7 @@ int main(void)
 		fibo = current + former;
 		former = current;
 		current = fibo;
-		printf("%f", fibo);
+		printf("%.0f", fibo);
 		if (i != 49)
 			printf(", ");
 	}
