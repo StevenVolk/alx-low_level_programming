@@ -19,4 +19,5 @@ int main(void)
 		former = current;
 	}
 	printf("\n");
+	return (1);
 }
