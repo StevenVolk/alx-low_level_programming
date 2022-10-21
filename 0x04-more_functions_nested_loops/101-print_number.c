@@ -8,8 +8,19 @@
 void print_number(int n)
 {
 	int i, j, k;
-
-	i, j = n;
+	if (n > 0)
+	{
+		i, j = n;
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+	}
+	else
+	{
+		i, j = n * -1;
+		_putchar('-');
+	}
 	while (i != 0)
 	{
 		k = 1;
