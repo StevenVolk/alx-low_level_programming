@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
  * main - prints the first 50 fibonnachi number, starting with 1 and 2
