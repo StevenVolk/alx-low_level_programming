@@ -8,7 +8,6 @@
 
 int main(void)
 {
-	int i;
 	long int previous, present, future, sum;
 
 	previous = 0;
