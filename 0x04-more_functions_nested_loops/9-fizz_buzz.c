@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints 1 to 100 if 3 print Fizz if 5 print Buzz and if 3 and 5 print FizzBuzz
+ * main - print 1 to 100 if 3 print Fizz if 5 - Buzz and if 3 and 5 - FizzBuzz
  *
  * Return: returns 0
  */
