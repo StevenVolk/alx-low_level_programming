@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	double former, current, fibo;
+	long int former, current, fibo;
 
 	former = 0;
 	current = 1;
@@ -18,7 +18,7 @@ int main(void)
 		fibo = current + former;
 		former = current;
 		current = fibo;
-		printf("%.0f", fibo);
+		printf("%ld", fibo);
 		if (i != 49)
 			printf(", ");
 	}
