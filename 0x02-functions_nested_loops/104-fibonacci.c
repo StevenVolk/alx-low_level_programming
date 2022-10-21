@@ -13,13 +13,13 @@ int main(void)
 
 	previous = 0;
 	present = 1;
-	for (i = 0; i < 98; i++)
+	for (i = 0; i < 97; i++)
 	{
 		future = previous + present;
 		previous = present;
 		present = future;
 		printf("%.0f", future);
-		if (i != 97)
+		if (i != 96)
 			printf(", ");
 	}
 	printf("\n");
