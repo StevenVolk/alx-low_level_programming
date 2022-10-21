@@ -8,15 +8,18 @@
 
 int main(void)
 {
-	int i, former, current;
+	int i, former, current, fibo;
 
 	former = 0;
 	current = 1;
 	for (i = 0; i < 50; i++)
 	{
-		current += former;
-		printf("%i,", current);
+		fibo = current + former;
 		former = current;
+		current = fibo;
+		printf("%i", fibo);
+		if (i != 49)
+			printf(", ");
 	}
 	printf("\n");
 	return (1);
