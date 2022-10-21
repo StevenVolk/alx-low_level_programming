@@ -8,6 +8,7 @@
 void print_number(int n)
 {
 	int i, j, k;
+
 	if (n > 0)
 	{
 		i, j = n;
@@ -32,4 +33,5 @@ void print_number(int n)
 		_putchar('0' + j);
 		i = i % k;
 	}
+	_putchar('\n');
 }
