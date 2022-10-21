@@ -3,7 +3,7 @@
 /**
  * main - finds sum of even valued terms for fibonacci numbers < 4,000,000
  *
- * Return: returns 1
+ * Return: returns 0
  */
 
 int main(void)
@@ -23,5 +23,5 @@ int main(void)
 			sum += future;
 	}
 	printf("%ld\n", sum);
-	return (1);
+	return (0);
 }
