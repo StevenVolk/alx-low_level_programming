@@ -26,19 +26,30 @@ void print_to_98(int n)
 			{
 				_putchar('0' + m);
 			}
-			else
+			else if (m < 100)
 			{
 				j = m / 10;
 				k = m % 10;
 				_putchar('0' + j);
 				_putchar('0' + k);
 			}
-			if (m != 98)
+			else
+			{
+				j = i % 10;
+				k = i / 10;
+				l = k % 10;
+				m = k / 10;
+				_putchar('0' + m);
+				_putchar('0' + l);
+				_putchar('0' + j);
+			}
+			if (i != 98)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
-			else {_putchar('\n');}
+			else
+				_putchar('\n');
 		}
 	}
 	else
