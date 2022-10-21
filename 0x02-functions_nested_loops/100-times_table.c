@@ -26,6 +26,7 @@ void print_times_table(int n)
 				else if (k < 10) {_putchar(','); _putchar(' '); _putchar(' '); _putchar(' ');}
 				else if (k < 100) {_putchar(','); _putchar(' '); _putchar(' ');}
 				else {_putchar(','); _putchar(' ');}
+			}
 		}
 	}
 }
