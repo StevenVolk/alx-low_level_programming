@@ -17,9 +17,7 @@ void print_number(int n)
 		j = n;
 	}
 	else if (n == 0)
-	{
-		_putchar('0');
-	}
+		j = 0;
 	else
 	{
 		i = n * -1;
@@ -37,6 +35,7 @@ void print_number(int n)
 		_putchar('0' + j);
 		j = i % k;
 		i = j;
+		if (j < k/10)
+			_putchar('0');
 	}
-	_putchar('\n');
 }
