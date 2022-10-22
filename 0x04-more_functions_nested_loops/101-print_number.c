@@ -10,6 +10,7 @@ void print_number(int n)
 {
 	int i, j, k;
 
+	k = 9999;
 	if (n > 0)
 	{
 		i = n;
@@ -25,16 +26,17 @@ void print_number(int n)
 		j = n * -1;
 		_putchar('-');
 	}
-	while (i != 0)
+	while (k != 1)
 	{
 		k = 1;
-		while (j > 10)
+		while (j > 9)
 		{
 			j /= 10;
 			k *= 10;
 		}
 		_putchar('0' + j);
-		i = i % k;
+		j = i % k;
+		i = j;
 	}
 	_putchar('\n');
 }
