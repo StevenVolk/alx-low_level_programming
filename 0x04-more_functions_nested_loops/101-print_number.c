@@ -2,7 +2,6 @@
 
 /**
  * print_number - print numbers with only _putchar
- *
  * @n: number to be printed
  */
 
@@ -31,7 +30,11 @@ void print_number(int n)
 		_putchar('0' + j);
 		j = i % k;
 		i = j;
-		if (j < k/10)
-			_putchar('0');
+		while (j < k/10)
+		{_putchar('0');
+			k /= 10;
+			j = i % k;
+			i = j;
+		}
 	}
 }
