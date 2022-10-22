@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_number - print numbers with only _putchar
  * @n: number to be printed
