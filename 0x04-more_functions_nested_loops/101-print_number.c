@@ -12,24 +12,20 @@ void print_number(int n)
 
 	k = 9999;
 	if (n > 0)
-	{
-		i = n;
+	{i = n;
 		j = n;
 	}
 	else if (n == 0)
 		j = 0;
 	else
-	{
-		i = n * -1;
+	{i = n * -1;
 		j = n * -1;
 		_putchar('-');
 	}
 	while (k != 1)
-	{
-		k = 1;
+	{k = 1;
 		while (j > 9)
-		{
-			j /= 10;
+		{j /= 10;
 			k *= 10;
 		}
 		_putchar('0' + j);
