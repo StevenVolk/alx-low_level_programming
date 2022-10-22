@@ -12,7 +12,8 @@ void print_number(int n)
 
 	if (n > 0)
 	{
-		i, j = n;
+		i = n;
+		j = n;
 	}
 	else if (n == 0)
 	{
@@ -20,7 +21,8 @@ void print_number(int n)
 	}
 	else
 	{
-		i, j = n * -1;
+		i = n * -1;
+		j = n * -1;
 		_putchar('-');
 	}
 	while (i != 0)
