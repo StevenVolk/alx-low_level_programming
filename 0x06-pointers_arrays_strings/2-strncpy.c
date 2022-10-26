@@ -21,7 +21,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	if (j < n)
 	{
-		z = j;
+		z = i;
 		dest[z] = '\0';
 	}
 	else
@@ -29,7 +29,11 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (k = 0; k < z; k++)
 	{
-		dest[k] = src[k];
+		if (k < j)
+			dest[k] = src[k];
+		else
+			dest[k] = '\0';
 	}
+
 	return (dest);
 }
