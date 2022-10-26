@@ -13,10 +13,13 @@ char *_strncpy(char *dest, char *src, int n)
 
 	i = 0;
 	j = 0;
+
 	while (dest[i] != '\0')
 		i++;
+
 	while (src[j] != '\0')
 		j++;
+
 	for (k = 0; k < n; k++)
 	{
 		if (k < j)
