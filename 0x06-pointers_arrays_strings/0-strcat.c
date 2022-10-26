@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _strcat - append the string src to dest variable and overwriting the null byte
+ * _strcat - append the string src to dest and overwriting the null byte
  * @dest: variable to be appended to
  * @src: variable to be appended
  *
@@ -27,6 +27,5 @@ char *_strcat(char *dest, char *src)
 		k++;
 	}
 	dest[j] = '\0';
-
 	return (dest);
 }
