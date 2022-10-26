@@ -1,5 +1,6 @@
 /**
  * string_toupper - functions for string to uppercase
+ * @c: string
  *
  * Return: returns the string in uppercase
  */
