@@ -1,6 +1,5 @@
 /**
- * *string_toupper - functions for string to uppercase
- * @c: string
+ * string_toupper - functions for string to uppercase
  *
  * Return: returns the string in uppercase
  */
@@ -12,7 +11,7 @@ char *string_toupper(char *c)
 	i = 0;
 	while (c[i])
 	{
-		c[i] = c[i] -32;
+		c[i] = c[i] - 32;
 		i++;
 	}
 
