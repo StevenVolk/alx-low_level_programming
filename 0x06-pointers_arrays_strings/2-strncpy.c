@@ -31,4 +31,5 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[k] = src[k];
 	}
+	return (dest);
 }
