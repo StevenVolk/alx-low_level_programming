@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "main.h"
+
 /**
  * cap_string - capitalize the first letter of every word
  * @c: input string
@@ -11,6 +14,7 @@ char *cap_string(char *c)
 
 	char s[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', \
 		'{', '}'};
+
 	i = 1;
 	j = 0;
 	if ((c[0] >= 'a') && (c[0] <= 'z'))
