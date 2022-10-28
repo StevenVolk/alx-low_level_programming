@@ -1,6 +1,6 @@
 /**
  * cap_string - capitalize the first letter of every word
- * @c: input string
+ * @d: input string
  *
  * Return: returns the capitalized version of the input string
  */
