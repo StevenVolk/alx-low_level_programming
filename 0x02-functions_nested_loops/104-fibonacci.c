@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	unsigned int i;
-	double previous, present, future;
+	int i;
+	unsigned int previous, present, future;
 
 	previous = 0;
 	present = 1;
