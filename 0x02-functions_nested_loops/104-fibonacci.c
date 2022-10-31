@@ -18,7 +18,7 @@ int main(void)
 		future = previous + present;
 		previous = present;
 		present = future;
-		printf("%.0f", future);
+		printf("%d", future);
 		if (i != 97)
 			printf(", ");
 	}
