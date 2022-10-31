@@ -9,7 +9,7 @@
 int main(void)
 {
 	unsigned int i;
-	unsigned double previous, present, future;
+	double previous, present, future;
 
 	previous = 0;
 	present = 1;
