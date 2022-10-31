@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i;
-	unsigned int previous, present, future;
+	double previous, present, future;
 
 	previous = 0;
 	present = 1;
@@ -18,7 +18,7 @@ int main(void)
 		future = previous + present;
 		previous = present;
 		present = future;
-		printf("%d", future);
+		printf("%.0f", future);
 		if (i != 97)
 			printf(", ");
 	}
