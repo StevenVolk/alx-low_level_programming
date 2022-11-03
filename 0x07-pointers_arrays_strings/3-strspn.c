@@ -3,6 +3,7 @@
  *
  * @s: bytes to be checked
  * @accept: acceptable bytes
+ *
  * Return: number of acceptable bytes
  */
 
@@ -29,5 +30,6 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		i++;
 	}
+
 	return (k);
 }
