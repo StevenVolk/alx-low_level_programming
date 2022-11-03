@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _sqrt_recursion - finds natural square root of a number
  *
@@ -15,7 +13,7 @@ int _sqrt_recursion(int n)
 		return (-1);
 	for (i = 1; i < ((n / 2) + 1); i++)
 	{
-		if (_pow_recursion(i, 2) == n)
+		if ((i * i) == n)
 		{
 			return (i);
 		}
