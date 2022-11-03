@@ -8,19 +8,13 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int i, j, k;
+	int i, j;
 
-	k = 0;
-	while (a[k])
-		k++;
-	for (i = 0; i < k; i++)
+	for (i = 0; i < 8; i++)
 	{
 		for (j = 0; j < 8; j++)
 		{
-			if (a[i][j] == ' ')
-				_putchar('0' + ' ');
-			else
-				_putchar(a[i][j]);
+			_putchar(a[i][j]);
 		}
 		_putchar('\n');
 	}
