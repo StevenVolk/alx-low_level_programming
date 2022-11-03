@@ -1,5 +1,5 @@
 /**
- * int _strspn - returns the number of acceptable bytes in s
+ * _strspn - returns the number of acceptable bytes in s
  *
  * @s: bytes to be checked
  * @accept: acceptable bytes
@@ -30,6 +30,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		i++;
 	}
-
 	return (k);
 }
