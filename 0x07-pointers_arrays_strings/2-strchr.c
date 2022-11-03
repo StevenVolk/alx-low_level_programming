@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * _strchr - points to c in the s, or NULL if the character is not found
  *
@@ -8,23 +10,19 @@
 
 char *_strchr(char *s, char c)
 {
-	int i, j, k;
-	char *d;
-
-	i = 0;
-	j = 0;
-	k = 0;
-	while (s[i])
+	while (*s)
 	{
-		if (s[i] == c || j == 1)
+		if (*s == c)
 		{
-			d[k] = s[i];
-			j = 1;
-			k++;
+			return (s);
 		}
-		i++;
+		else
+			s++;
+		
 	}
-	d[k] = '\n';
 
-	return (d);
+	if (c == '\0')
+		return (s);
+
+	return (NULL);
 }
