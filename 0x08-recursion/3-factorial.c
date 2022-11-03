@@ -1,7 +1,7 @@
 /**
  * factorial - finds the factorial of a number
  *
- * n: number
+ * @n: number
  * Return: factorial of number
  */
 
