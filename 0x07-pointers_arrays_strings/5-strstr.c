@@ -24,10 +24,9 @@ char *_strstr(char *haystack, char *needle)
 		z = 0;
 		while (needle[z])
 		{
-			if (needle[z] == haystack[z])
-				z++;
-			else
+			if (needle[z] != haystack[z])
 				break;
+			z++;
 		}
 		if (z != i)
 			haystack++;
