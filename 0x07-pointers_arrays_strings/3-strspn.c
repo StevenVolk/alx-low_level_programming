@@ -3,7 +3,6 @@
  *
  * @s: bytes to be checked
  * @accept: acceptable bytes
- *
  * Return: number of acceptable bytes
  */
 
