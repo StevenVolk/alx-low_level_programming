@@ -7,12 +7,12 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, sum1, sum2;
+	int i, j, sum1, sum2;
 
 	i = 0;
 	j = 0;
 	sum1 = 0;
-	sum2 = 0
+	sum2 = 0;
 	while (i < size)
 	{
 		sum1 += a[i][i];
