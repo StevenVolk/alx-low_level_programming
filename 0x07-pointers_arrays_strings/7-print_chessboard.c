@@ -8,9 +8,12 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int i, j;
+	int i, j, k;
 
-	for (i = 0; a[i]; i++)
+	k = 0;
+	while (a[k])
+		k++;
+	for (i = 0; i < k; i++)
 	{
 		for (j = 0; j < 8; j++)
 		{
