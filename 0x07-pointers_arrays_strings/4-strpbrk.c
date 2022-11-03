@@ -4,8 +4,7 @@
  * _strpbrk - points to the first occurence of an acceptable bytes
  *
  * @s: string to be checked
- * @accept: acceptable bytes
- * 
+ * @accept: acceptable bytes 
  * Return: the point of first occerence to end of s
  */
 
