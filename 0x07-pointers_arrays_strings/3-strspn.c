@@ -11,13 +11,11 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, k;
 
-	i = 0;
 	k = 0;
 	while (s[i])
 	{
 		if (s[i] != 32)
 		{
-			j = 0;
 			while (accept[j])
 			{
 				if (s[i] == accept[j])
@@ -25,10 +23,10 @@ unsigned int _strspn(char *s, char *accept)
 					k++;
 					break;
 				}
-				j++;
 			}
 		}
-		i++;
+		else
+			return (k);
 	}
 	return (k);
 }
