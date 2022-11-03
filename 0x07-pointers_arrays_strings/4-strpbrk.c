@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * s_strpbrk - points to the first occurence of an acceptable bytes
+ * _strpbrk - points to the first occurence of an acceptable bytes
  *
  * @s: string to be checked
  * @accept: acceptable bytes 
@@ -18,9 +18,7 @@ char *_strpbrk(char *s, char *accept)
 		while (accept[j])
 		{
 			if (*s == accept[j])
-			{
 				return (s);
-			}
 			j++;
 		}
 		s++;
