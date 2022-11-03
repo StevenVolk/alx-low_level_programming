@@ -30,7 +30,7 @@ void print_number(int n)
 		_putchar('0' + j);
 		j = i % k;
 		i = j;
-		while (j < k/10)
+		while (j < k / 10)
 		{_putchar('0');
 			k /= 10;
 			j = i % k;
