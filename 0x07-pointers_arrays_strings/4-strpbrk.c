@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * _strpbrk - points to the first occurence of an acceptable bytes
  *
