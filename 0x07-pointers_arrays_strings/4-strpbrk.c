@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - points to the first occurence of an acceptable bytes
+ * s_strpbrk - points to the first occurence of an acceptable bytes
  *
  * @s: string to be checked
  * @accept: acceptable bytes 
