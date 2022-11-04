@@ -7,16 +7,27 @@
 
 int _sqrt_recursion(int n)
 {
-	int i;
-
-	if (n <= 0)
+	if (n < 0)
 		return (-1);
-	for (i = 1; i < ((n / 2) + 1); i++)
-	{
-		if ((i * i) == n)
-		{
-			return (i);
-		}
-	}
-	return (-1);
+	else if (n == 0 || n == 1)
+		return (n);
+	else
+		return (chk_sqrt(n, 1);
+}
+
+/**
+ * chk_sqrt - checks for natural square root of a number n
+ *
+ * @n: number
+ * Return: the natural square root of a number
+ */
+
+int chk_sqrt(int n, int i)
+{
+	if (i * i < n)
+		return (chk_sqrt(n, (i + 1)));
+	else if (i * i == n)
+		return (i);
+	else
+		return (-1);
 }
