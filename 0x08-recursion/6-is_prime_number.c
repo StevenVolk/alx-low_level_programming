@@ -10,10 +10,10 @@ int chk_prime(int n, int i)
 {
 	if ((i <= (n / 2)) && ((n % i) != 0))
 		return (chk_prime(n, i + 1));
-	else if (i != n)
-		return (0);
-	else
+	else if (i > (n / 2))
 		return (1);
+	else
+		return (0);
 }
 
 /**
