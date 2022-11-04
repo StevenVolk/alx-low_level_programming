@@ -2,6 +2,7 @@
  * chk_sqrt - checks for natural square root of a number n
  *
  * @n: number
+ * @i: number to check if a perfect root of n
  * Return: the natural square root of a number
  */
 
