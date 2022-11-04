@@ -7,10 +7,9 @@
  */
 int chk_length(char *s, int i)
 {
-	if (s[i]) return (chk_length(s, i + 1));
-	else return (i);
+	if (s[i]){return (chk_length(s, i + 1));}
+	else{return (i);}
 }
-
 /**
  * chk_palindrome - checks if palindrome
  *
@@ -21,11 +20,10 @@ int chk_length(char *s, int i)
  */
 int chk_palindrome(char *s, int a, int z)
 {
-	if (s[a] != s[z]) return (0);
-	else if (a < z)	return chk_palindrome(s, (a + 1), (z - 1));
-	else return (1);
+	if (s[a] != s[z]){return (0);}
+	else if (a < z){return chk_palindrome(s, (a + 1), (z - 1));}
+	else{return (1);}
 }
-
 /**
  * is_palindrome - find palindrome
  *
@@ -36,6 +34,6 @@ int is_palindrome(char *s)
 {
 	int length = chk_length(s, 0);
 
-	if (length == 0) return (1);
-	else return (chk_palindrome(s, 0, length - 1));
+	if (length == 0){return (1);}
+	else{return (chk_palindrome(s, 0, length - 1));}
 }
