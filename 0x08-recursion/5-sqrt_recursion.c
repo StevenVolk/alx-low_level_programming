@@ -1,4 +1,4 @@
-/** 
+/**
  * chk_sqrt - checks for natural square root of a number n
  *
  * @n: number
@@ -14,7 +14,7 @@ int chk_sqrt(int n, int i)
 	else
 		return (-1);
 }
- 
+
 /**
  * _sqrt_recursion - finds natural square root of a number
  *
