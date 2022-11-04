@@ -1,6 +1,5 @@
 /**
  * chk_length - counts length of string
- *
  * @s: string to be checked
  * @i: number if strings
  * Return: length of string
@@ -14,7 +13,6 @@ int chk_length(char *s, int i)
 }
 /**
  * chk_palindrome - checks if palindrome
- *
  * @s: string to be checked
  * @a: first index to compare with
  * @z: second index to compare with
@@ -25,7 +23,7 @@ int chk_palindrome(char *s, int a, int z)
 	if (s[a] != s[z])
 		return (0);
 	else if (a < z)
-		return chk_palindrome(s, (a + 1), (z - 1));
+		return (chk_palindrome(s, (a + 1), (z - 1)));
 	else
 		return (1);
 }
