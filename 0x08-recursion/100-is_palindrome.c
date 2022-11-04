@@ -7,7 +7,7 @@
  */
 int chk_length(char *s, int i)
 {
-	if (s[i]){return (chk_length(s, i + 1));}
+	if (s[i])return (chk_length(s, i + 1));
 	else{return (i);}
 }
 /**
