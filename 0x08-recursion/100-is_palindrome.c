@@ -21,7 +21,7 @@ int chk_length(char *s, int i)
  * @z: second index to compare with
  * Return: 1 if palindrome, otherwise 0
  */
-chk_palindrome(char *s, int a, int b)
+int chk_palindrome(char *s, int a, int b)
 {
 	if (s[a] != s[z])
 		return (0);
