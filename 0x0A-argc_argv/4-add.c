@@ -6,19 +6,26 @@
  *
  * @argc: number of arguements
  * @argv: array of arguements
- * Return: Always 1
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, j;
 	int sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		sum += atoi(argv[i]);
+		j = atoi(argv[i]);
+		if (!j)
+		{
+			printf("%s\n", "Error");
+			return (0);
+		}
+		else
+			sum += j;
 	}
 	printf("%d\n", sum);
 
-	return (1);
+	return (0);
 }
