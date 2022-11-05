@@ -6,7 +6,7 @@
  *
  * @argc: length of arguements
  * @argv: array of arguements
- * Return: Always 0
+ * Return: 0 if no  error, otherwise 1
  */
 
 int main(int argc, char *argv[])
@@ -15,7 +15,10 @@ int main(int argc, char *argv[])
 	int b;
 
 	if (argc != 3)
+	{
 		printf("%s\n", "Error");
+		return (1);
+	}
 	else
 	{
 		a = atoi(argv[1]);
