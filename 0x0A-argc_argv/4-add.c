@@ -6,7 +6,7 @@
  *
  * @argc: number of arguements
  * @argv: array of arguements
- * Return: 0 if no error, 1 if error
+ * Return: 0 if no error, otherwise 1 if error
  */
 
 int main(int argc, char *argv[])
