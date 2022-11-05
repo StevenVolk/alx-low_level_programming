@@ -10,8 +10,11 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc != 2)
-		return ("%d\n", (argv[1] * argv[2]));
+	int product;
+
+	product = argv[1] * argv[2];
+	if (argc != 3)
+		return ("%d\n", product);
 	else
 		return("%s\n", "Error");
 	return (1);
