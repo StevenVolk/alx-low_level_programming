@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
 {
 	int j, count, amount;
 	int change[] = {25, 10, 5, 2, 1};
-	count = 0;
 
+	count = 0;
 	if (argc < 2)
 	{
 		printf("%s\n", "Error");
@@ -33,5 +33,6 @@ int main(int argc, char *argv[])
 		count += amount / change[j];
 		amount = amount % change[j];
 	}
+	printf("%d\n", count);
 	return (0);
 }
