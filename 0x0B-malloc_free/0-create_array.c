@@ -19,7 +19,6 @@ char *create_array(unsigned int size, char c)
 
 	for (i = 0; i < size; i++)
 		arr[i] = c;
-	simple_print_buffer(arr);
-	free(arr);
-	return (0);
+	if (return (arr))
+		free(arr);
 }
