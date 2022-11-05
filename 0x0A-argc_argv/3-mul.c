@@ -11,11 +11,10 @@
 
 int main(int argc, char *argv[])
 {
-	int product;
+	int a = atio(argv);
 
-	product = atio(argv[1]) * atio(argv[2]);
 	if (argc != 3)
-		printf("%d\n", product);
+		printf("%d\n", a[1] * a[2]);
 	else
 		printf("%s\n", "Error");
 	return (1);
