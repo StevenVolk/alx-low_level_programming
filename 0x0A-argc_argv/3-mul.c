@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	if (argc != 2)
-		return ("%d\n", argv[1] * argv[2]);
+		return ("%d\n", (argv[1] * argv[2]));
 	else
 		return("%s\n", "Error");
 	return (1);
