@@ -5,12 +5,14 @@
 /**
  * main - main function
  *
+ * @argc: index of array
  * @argv: array of arguements
  * Return: Always 0
  */
 
-int main(char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%s", argv[0]);
+	argc = 0;
+	printf("%s", argv[argc]);
 	return (0);
 }
