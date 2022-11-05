@@ -6,7 +6,7 @@
  *
  * @argc: length of arguements
  * @argv: array of arguements
- * Return: Always 1
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
@@ -22,5 +22,5 @@ int main(int argc, char *argv[])
 		b = atoi(argv[2]);
 		printf("%d\n", a * b);
 	}
-	return (1);
+	return (0);
 }
