@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * alloc_grid - creates a grid with intialized to 0
  *
