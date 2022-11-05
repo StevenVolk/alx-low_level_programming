@@ -23,11 +23,6 @@ int main(int argc, char *argv[])
 
 	amount = atoi(argv[1]);
 
-	if (amount < 0)
-	{
-		printf("%s\n", "Error");
-		return (1);
-	}
 	for (j = 0; j < 5; j++)
 	{
 		count += amount / change[j];
