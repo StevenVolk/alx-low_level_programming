@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int change[] = {25, 10, 5, 2, 1};
 
 	count = 0;
-	if (argc < 2)
+	if (argc != 2)
 	{
 		printf("%s\n", "Error");
 		return (1);
