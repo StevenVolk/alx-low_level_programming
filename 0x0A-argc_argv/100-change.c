@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int j, count, amount;
-	int change[] = [25, 10, 5, 2, 1];
+	int change[] = {25, 10, 5, 2, 1};
 	count = 0;
 
 	if (argc < 2)
@@ -33,5 +33,5 @@ int main(int argc, char *argv[])
 		count += amount / change[j];
 		amount = amount % change[j];
 	}
-	return (0)
+	return (0);
 }
