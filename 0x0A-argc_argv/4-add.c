@@ -6,7 +6,7 @@
  *
  * @argc: number of arguements
  * @argv: array of arguements
- * Return: Always 0
+ * Return: 0 if no error, 1 if error
  */
 
 int main(int argc, char *argv[])
@@ -16,16 +16,15 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; j != '\0'; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (!isdigit(argv[i][j]))
+			if (argv[i][j] < 0 || argv[i][j] > 9)
 			{
 				printf("%s\n", "Error");
-				return (0);
+				return (1);
 			}
 		}
-		j = atoi(argv[i]);
-		sum += j;
+		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 
