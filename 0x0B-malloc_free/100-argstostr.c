@@ -11,15 +11,15 @@
 
 char *argstostr(int ac, char **av)
 {
-	int a, i, j, k;
+	int a, b, c, i, j, k;
 	char *arg;
 
 	a = 0;
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	for (i = 0; i < ac; i++)
+	for (b = 0; b < ac; b++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		for (c = 0; av[b][c] != '\0'; c++)
 		{
 			a++;
 		}
