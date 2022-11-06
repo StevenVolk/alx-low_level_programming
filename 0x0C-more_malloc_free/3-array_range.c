@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * array_range - creates an array from min (included) to max (included)
