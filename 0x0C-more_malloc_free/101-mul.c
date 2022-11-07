@@ -47,6 +47,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	for (i = 0; argv[1][i] != '\0'; i++)
-		a = atoi(argv[1]);
+		a[i] = atoi(argv[1][i]);
 	return (a);
 }
