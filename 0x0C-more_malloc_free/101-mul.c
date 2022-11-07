@@ -34,7 +34,7 @@ int *_check_malloc(char *argv)
 int main(int argc, char *argv[])
 {
 	int *a, *b;
-	int c, d, count;
+	int count;
 
 	count = 0;
 	while (argv[count])
