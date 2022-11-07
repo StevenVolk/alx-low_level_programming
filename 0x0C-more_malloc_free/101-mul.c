@@ -19,7 +19,7 @@ void *_check_malloc(char *argv)
 		if (argv[i] < '0' || argv[i] > '9')
 			return (NULL);
 	}
-	return (malloc(i * sizeof(char)));
+	return (malloc(i * sizeof(int)));
 }
 
 /**
