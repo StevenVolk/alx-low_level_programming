@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		exit(98);
 	}
-	free(a);
+	a = atoi(argv[1]);
 	free(b);
-	return (argv[1] * argv[2]);
+	return (a);
 }
