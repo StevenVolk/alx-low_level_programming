@@ -48,5 +48,7 @@ int main(int argc, char *argv[])
 		exit(98);
 		return (1);
 	}
+	free(a);
+	free(b);
 	return (0);
 }
