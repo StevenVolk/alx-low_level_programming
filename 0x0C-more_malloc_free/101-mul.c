@@ -30,7 +30,7 @@ int *_check_malloc(char *argv)
  * Return: Always 0, 1 if in error
  */
 
-int main(int argc, char *argv[])
+void main(int argc, char *argv[])
 {
 	int *a, *b;
 
@@ -48,5 +48,4 @@ int main(int argc, char *argv[])
 	}
 	free(a);
 	free(b);
-	return (2);
 }
