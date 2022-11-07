@@ -38,7 +38,6 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", "Error");
 		exit(98);
-		return (1);
 	}
 	a = _check_malloc(argv[1]);
 	b = _check_malloc(argv[2]);
@@ -46,7 +45,6 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", "Error");
 		exit(98);
-		return (1);
 	}
 	free(a);
 	free(b);
