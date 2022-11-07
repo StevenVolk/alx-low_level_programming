@@ -32,7 +32,7 @@ int *_check_malloc(char *argv)
 
 int main(int argc, char *argv[])
 {
-	int *a, *b, i;
+	int *a, *b;
 
 	if (argc != 3)
 	{
@@ -46,7 +46,6 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		exit(98);
 	}
-	for (i = 0; argv[1][i] != '\0'; i++)
-		a[i] = atoi(argv[1][i]);
+	a = atoi(argv[1]);
 	return (a);
 }
