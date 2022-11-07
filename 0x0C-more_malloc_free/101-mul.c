@@ -46,6 +46,6 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		exit(98);
 	}
-	char a = argv[1];
+	a = argv[1];
 	return (a);
 }
