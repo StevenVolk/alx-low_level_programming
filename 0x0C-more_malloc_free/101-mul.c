@@ -44,6 +44,8 @@ int main(int argc, char *argv[])
 	if (a == NULL || b == NULL)
 	{
 		printf("%s\n", "Error");
+		free(a);
+		free(b);
 		exit(98);
 	}
 	a = argv[1];
