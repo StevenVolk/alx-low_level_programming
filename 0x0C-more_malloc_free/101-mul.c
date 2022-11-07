@@ -10,7 +10,7 @@
  * Return: returns allocated space and if not int, return NULL
  */
 
-int *_check_malloc(char *argv)
+char *_check_malloc(char *argv)
 {
 	int i;
 
@@ -32,7 +32,7 @@ int *_check_malloc(char *argv)
 
 int main(int argc, char *argv[])
 {
-	int *a, *b;
+	char *a, *b;
 
 	if (argc != 3)
 	{
@@ -46,6 +46,6 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		exit(98);
 	}
-	a = atoi(argv[1]);
+	char a = argv[1];
 	return (a);
 }
