@@ -34,12 +34,8 @@ int *_check_malloc(char *argv)
 int main(int argc, char *argv[])
 {
 	int *a, *b;
-	int count;
 
-	count = 0;
-	while (argv[count])
-		count++;
-	if (count != 3)
+	if (argc != 3)
 	{
 		printf("%s\n", "Error");
 		exit(98);
