@@ -10,7 +10,7 @@
  * Return: returns allocated space and if not int, return NULL
  */
 
-char *_check_malloc(char *argv)
+void *_check_malloc(char *argv)
 {
 	int i;
 
@@ -47,5 +47,5 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	a = argv[1];
-	return (a);
+	return (0);
 }
