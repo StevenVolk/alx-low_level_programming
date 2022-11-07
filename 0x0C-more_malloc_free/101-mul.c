@@ -19,7 +19,7 @@ void *_check_malloc(char *argv)
 		if (argv[i] < '0' || argv[i] > '9')
 			return (NULL);
 	}
-	return (malloc(i * sizeof(int)));
+	return (malloc(i * sizeof(char)));
 }
 
 /**
@@ -27,13 +27,12 @@ void *_check_malloc(char *argv)
  *
  * @argc: number of arguements
  * @argv: arguements
- * Return: Always 0, 1 if in error
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
 {
-	char *a;
-	int b, c;
+	char *a, *b;
 
 	if (argc != 3)
 	{
@@ -48,7 +47,8 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	a = argv[1];
-	b = atoi(a);
-	c = atoi(argv[1]);
-	return (b);
+	b = argv[2];
+	free(a);
+	free(b);
+	return (0);
 }
