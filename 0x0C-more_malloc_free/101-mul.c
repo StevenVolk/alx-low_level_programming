@@ -50,5 +50,5 @@ int main(int argc, char *argv[])
 	}
 	free(a);
 	free(b);
-	return (0);
+	return (2);
 }
