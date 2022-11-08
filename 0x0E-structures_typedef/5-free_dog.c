@@ -5,6 +5,7 @@
 /**
  * free_dog - frees dogs
  * @d: a structure of dog
+ * Return: nothing
  */
 
 void free_dog(dog_t *d)
@@ -15,4 +16,5 @@ void free_dog(dog_t *d)
 		free(d->owner);
 		free(d);
 	}
+	return;
 }
