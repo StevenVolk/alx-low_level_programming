@@ -10,7 +10,6 @@
 void free_dog(dog_t *d)
 {
 	if (d)
-	{
-		d = NULL;
-	}
+		if (d->name)
+			d->name = NULL;
 }
