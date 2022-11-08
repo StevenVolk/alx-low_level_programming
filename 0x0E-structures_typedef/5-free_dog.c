@@ -11,6 +11,6 @@ void free_dog(dog_t *d)
 {
 	if (d)
 	{
-		d = new_dog("", 0, "");
+		d = NULL;
 	}
 }
