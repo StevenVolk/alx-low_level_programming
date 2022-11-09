@@ -7,8 +7,10 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	size_t int i;
 
+	if (!action || !array)
+		return;
 	i = 0;
 	while (i < size)
 	{
