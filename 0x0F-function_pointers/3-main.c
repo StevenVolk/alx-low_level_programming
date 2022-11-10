@@ -7,7 +7,7 @@
  *
  * @argc: number of arguements
  * @argv: arguements
- * Return: value with an operation of two integer
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
@@ -32,5 +32,6 @@ int main(int argc, char *argv[])
 	}
 
 	k = (*p)(i, j);
-	return (k);
+	printf("%d\n", k);
+	return (0);
 }
