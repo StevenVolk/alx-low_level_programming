@@ -31,6 +31,6 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	k = (*p)(i)(j);
+	k = (*p)(i, j);
 	return (k);
 }
