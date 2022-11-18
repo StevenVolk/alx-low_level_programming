@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdard.h>
 
 /**
  * print_char - prints the char variable
