@@ -39,9 +39,8 @@ void print_string(va_list item)
 
 	new_item = va_arg(item, char *);
 	if (new_item == NULL)
-		printf("(nil)");
-	else
-		printf("%s", new_item);
+		new_item = "(nil)";
+	printf("%s", new_item);
 }
 
 /**
