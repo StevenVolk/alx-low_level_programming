@@ -11,7 +11,7 @@
 typedef struct op
 {
 	char *op;
-	int (*f)(int a, int b);
+	void (*f)(va_list item);
 } op_t;
 
 int sum_them_all(const unsigned int n, ...);
