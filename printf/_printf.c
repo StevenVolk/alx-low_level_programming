@@ -12,6 +12,35 @@ print_char(va_list list)
 }
 
 /**
+ * print_string - prints a string
+ * @list: what to be printed
+ * Return: number of characters printed
+ */
+print_string(va_list list)
+{
+	int i;
+	char *pri;
+
+	pri = va_arg(list, char *);
+	if (pri == NULL)
+		pri = "null";
+	for (i = 0; i != '\0'; i++)
+		_putchar(pri[i]);
+	return (i);
+}
+
+/**
+ * print_percent - prints a percentage symbol
+ * @list: what to be printed
+ * Return: Always 1 for a percentage symbol
+ */
+print_percent(__attribute__((unused)) va_list list)
+{
+	_putchar('%');
+	return (1);
+}
+
+/**
  * _printf - performs the same function as printf
  * @format: type of arguement
  * Return: count of characters printed
