@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdarg.h>
 
 /**
  * struct op - Struct op
