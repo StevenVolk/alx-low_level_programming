@@ -16,7 +16,7 @@ int print_element(unsigned int l, char *val)
 	_putchar('0' + l);
 	_putchar(']');
 	_putchar(' ');
-	for (j = 0; val[j] = '\0'; j++)
+	for (j = 0; val[j] != '\0'; j++)
 	{
 		_putchar(val[j]);
 	}
@@ -31,7 +31,7 @@ int print_element(unsigned int l, char *val)
 size_t print_list(const list_t *h)
 {
 	char *val;
-	unsigned int i = 1;
+	unsigned int l, i = 1;
 
 	if (h->str == NULL)
 	{
