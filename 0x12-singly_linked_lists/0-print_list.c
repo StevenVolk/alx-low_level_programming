@@ -32,7 +32,7 @@ int print_element(unsigned int l, char *val)
 size_t print_list(const list_t *h)
 {
 	char *val;
-	struct list_t *current;
+	const list_t *current;
 	unsigned int l;
 	int i = 0;
 
