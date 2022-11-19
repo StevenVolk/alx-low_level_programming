@@ -24,7 +24,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		current = current->next;
 	new_element = malloc(sizeof(list_t));
 	if (new_element == NULL)
-		return (NULL)
+		return (NULL);
 	current->next = new_element;
 	new_element->str = str;
 	new_element->len = i;
