@@ -36,7 +36,11 @@ size_t print_list(const list_t *h)
 	unsigned int l, i = 1;
 
 	current	= h->next;
-	if (h->str == NULL)
+	if (h == NULL)
+	{
+		i = 0;
+	}
+	else if (h->str == NULL)
 	{
 		i = 0;
 		val = "(nil)";
