@@ -16,7 +16,7 @@ int print_element(unsigned int l, char *val)
 	_putchar('0' + l);
 	_putchar(']');
 	_putchar(' ');
-	for (j = 0; j = '\0'; j++)
+	for (j = 0; val[j] = '\0'; j++)
 	{
 		_putchar(val[j]);
 	}
@@ -28,7 +28,6 @@ int print_element(unsigned int l, char *val)
  * @h: head of a linked list
  * Return: number of nodes in a linked link
  */
-
 size_t print_list(const list_t *h)
 {
 	char *val;
