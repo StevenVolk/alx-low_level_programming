@@ -33,14 +33,14 @@ size_t print_list(const list_t *h)
 {
 	char *val;
 	struct list_s *current;
-	unsigned int l, i = 1;
+	unsigned int l, i = 0;
 
-	current	= h->next;
+	current	= h->str;
 	if (h == NULL)
 	{
 		i = 0;
 	}
-	else if (h->str == NULL)
+	else if (current == NULL)
 	{
 		i = 0;
 		val = "(nil)";
@@ -51,8 +51,8 @@ size_t print_list(const list_t *h)
 		while (current != NULL)
 		{
 			i++;
-			val = h->str;
-			l = h->len;
+			val = current;
+			l = current->len;
 			print_element(l, val);
 			current = current->next;
 		}
