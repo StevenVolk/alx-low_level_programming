@@ -4,7 +4,7 @@
 
 /**
  * print_element - prints an element of [i] val
- * @i: length of element
+ * @l: length of element
  * @val: element
  * Return: Always 0
  */
