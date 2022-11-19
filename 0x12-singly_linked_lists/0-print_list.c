@@ -11,9 +11,18 @@
 int print_element(unsigned int l, char *val)
 {
 	int j;
+	unsigned int k, x;
 
 	_putchar('[');
-	_putchar('0' + l);
+	if (l > 9)
+	{
+		k = l / 10;
+		_putchar('0' + k);
+		x = l % 10;
+		_putchar('0' + x);
+	}
+	else
+		_putchar('0' + l);
 	_putchar(']');
 	_putchar(' ');
 	for (j = 0; val[j] != '\0'; j++)
@@ -50,7 +59,7 @@ size_t print_list(const list_t *h)
 			l = current->len;
 			if (val == NULL)
 			{
-				val = "nil";
+				val = "(nil)";
 				l = 0;
 			}
 			print_element(l, val);
