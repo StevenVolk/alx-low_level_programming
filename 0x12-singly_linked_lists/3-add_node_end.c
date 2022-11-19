@@ -22,7 +22,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_element = malloc(sizeof(list_t));
 	if (new_element == NULL)
 		return (NULL);
-	new_element->str = stdrup(str);
+	new_element->str = strdup(str);
 	new_element->len = i;
 	new_element->next = NULL;
 	if (new_element == NULL)
