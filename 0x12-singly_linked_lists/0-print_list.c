@@ -6,7 +6,7 @@
  * print_element - prints an element of [i] val
  * @i: length of element
  * @val: element
- * Return: Always 1
+ * Return: Always 0
  */
 int print_element(unsigned int l, char *val)
 {
@@ -21,6 +21,7 @@ int print_element(unsigned int l, char *val)
 		_putchar(val[j]);
 	}
 	_putchar('\n');
+	return (0);
 }
 
 /**
@@ -31,8 +32,10 @@ int print_element(unsigned int l, char *val)
 size_t print_list(const list_t *h)
 {
 	char *val;
+	struct list_s *current;
 	unsigned int l, i = 1;
 
+	current	= h->next;
 	if (h->str == NULL)
 	{
 		i = 0;
@@ -41,13 +44,13 @@ size_t print_list(const list_t *h)
 	}
 	else
 	{
-		while (h->next != NULL)
+		while (current != NULL)
 		{
 			i++;
 			val = h->str;
 			l = h->len;
 			print_element(l, val);
-			h->str = h->next;
+			current = current->next;
 		}
 	}
 	return (i);
