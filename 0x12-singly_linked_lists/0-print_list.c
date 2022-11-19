@@ -33,26 +33,26 @@ size_t print_list(const list_t *h)
 {
 	char *val;
 	struct list_s *current;
-	unsigned int l, i = 0;
+	unsigned int l;
+	int i = 0;
 
-	current	= h->str;
-	if (h == NULL)
+	current	= h;
+	if (current == NULL)
 	{
 		i = 0;
-	}
-	else if (current == NULL)
-	{
-		i = 0;
-		val = "(nil)";
-		print_element(0, val);
 	}
 	else
 	{
 		while (current != NULL)
 		{
 			i++;
-			val = current;
+			val = current->str;
 			l = current->len;
+			if (val == NULL)
+			{
+				val = "nil";
+				l = 0;
+			}
 			print_element(l, val);
 			current = current->next;
 		}
