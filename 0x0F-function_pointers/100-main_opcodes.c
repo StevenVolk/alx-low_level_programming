@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	b = 0;
 	c = (unsigned char *)main;
 
-	if (a < 0)
+	if (a < 0 && count == 2)
 	{
 		printf("Error\n");
 		exit(2);
