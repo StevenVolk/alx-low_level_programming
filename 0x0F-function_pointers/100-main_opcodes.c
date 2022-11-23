@@ -13,8 +13,6 @@ int main(int argc, char *argv[])
 	int a, b;
 	unsigned char *c;
 
-	b = 0;
-
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -22,7 +20,9 @@ int main(int argc, char *argv[])
 	}
 
 	a = atoi(argv[1]);
+	b = 0;
 	c = (unsigned char *)main;
+
 	if (a < 0)
 	{
 		printf("Error\n");
