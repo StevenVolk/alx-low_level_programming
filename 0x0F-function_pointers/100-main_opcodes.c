@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int i, j;
 	unsigned char *c;
 
 	if (argc != 2)
@@ -19,22 +19,22 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	a = atoi(argv[1]);
-	b = 0;
+	i = atoi(argv[1]);
+	j = 0;
 	c = (unsigned char *)main;
 
-	if (a < 0)
+	if (i < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	if (a > 0)
+	if (i > 0)
 	{
-		printf("testing");
-		while (b < (a - 1))
+		while (j < (i - 1))
 			printf("%hhx", c[b++]);
 		printf("%hhx\n", c[b]);
 	}
+
 	return (0);
 }
