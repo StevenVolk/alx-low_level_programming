@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	if (i > 0)
 	{
 		while (j < (i - 1))
-			printf("%hhx", c[j++]);
+			printf("%02hhx", c[j++]);
 		printf("%hhx\n", c[j]);
 	}
 
