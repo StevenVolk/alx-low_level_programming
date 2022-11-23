@@ -31,8 +31,9 @@ int main(int argc, char *argv[])
 
 	if (a > 0)
 	{
+		printf("testing");
 		while (b < (a - 1))
-			printf("%02hhx", c[b++]);
+			printf("%hhx", c[b++]);
 		printf("%hhx\n", c[b]);
 	}
 	return (0);
