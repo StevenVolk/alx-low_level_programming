@@ -22,12 +22,12 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
-	else if (a < 0)
+	if (a < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	else
+	if (a > 0)
 	{
 		while (b < (a - 1))
 			printf("%hhx", c[b++]);
