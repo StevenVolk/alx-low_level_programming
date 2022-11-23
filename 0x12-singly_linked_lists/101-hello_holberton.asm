@@ -2,7 +2,6 @@ section .text
 	default	rel
 	extern	printf
 	global	main
-
 main:
 	push	rbp
 	mov	rdi, fmt
@@ -12,7 +11,6 @@ main:
 	pop	rbp
 	mov	rax, 0
 	ret
-
 session .data
 	message:	db "Hello, Holberton", 10, 0
 	fmt:		db "%s", 10, 0
