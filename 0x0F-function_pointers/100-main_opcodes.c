@@ -13,20 +13,22 @@ int main(int argc, char *argv[])
 	int a, b;
 	unsigned char *c;
 
-	a = atoi(argv[1]);
 	b = 0;
-	c = (unsigned char *) main;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
+
+	a = atoi(argv[1]);
+	c = (unsigned char *)main;
 	if (a < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
+
 	if (a > 0)
 	{
 		while (b < (a - 1))
