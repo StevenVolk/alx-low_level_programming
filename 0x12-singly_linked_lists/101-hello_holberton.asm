@@ -11,6 +11,6 @@ main:
 	pop	rbp
 	mov	rax, 0
 	ret
-	session .data
-msg: db "Hello, Holberton", 0
-fmt: db "%s", 10, 0
+	section .data
+msg:	db "Hello, Holberton", 10, 0
+fmt:	db "%s", 10, 0
