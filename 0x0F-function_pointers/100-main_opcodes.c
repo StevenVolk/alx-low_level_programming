@@ -30,7 +30,10 @@ int main(int argc, char *argv[])
 	}
 
 	while (j < (i - 1))
-		printf("%02hhx", c[j++]);
+	{
+		printf("%02hhx", c[j]);
+		j++;
+	}
 	printf("%hhx\n", c[j]);
 
 	return (0);
