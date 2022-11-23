@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i, j;
-	unsigned char *c;
+	char *c;
 
 	if (argc != 2)
 	{
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 
 	i = atoi(argv[1]);
-	c = (unsigned char *)main;
+	c = (char *)main;
 	j = 0;
 
 	if (i < 0)
