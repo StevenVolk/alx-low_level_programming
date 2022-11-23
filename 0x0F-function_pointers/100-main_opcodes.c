@@ -20,6 +20,8 @@ int main(int argc, char *argv[])
 	}
 
 	i = atoi(argv[1]);
+	c = (unsigned char *)main;
+	j = 0;
 
 	if (i < 0)
 	{
@@ -27,15 +29,9 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	c = (unsigned char *)main;
-	j = 0;
-
-	if (i > 0)
-	{
-		while (j < (i - 1))
-			printf("%02hhx", c[j++]);
-		printf("%hhx\n", c[j]);
-	}
+	while (j < (i - 1))
+		printf("%02hhx", c[j++]);
+	printf("%hhx\n", c[j]);
 
 	return (0);
 }
