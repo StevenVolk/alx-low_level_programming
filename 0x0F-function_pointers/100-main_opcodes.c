@@ -20,14 +20,15 @@ int main(int argc, char *argv[])
 	}
 
 	i = atoi(argv[1]);
-	j = 0;
-	c = (unsigned char *)main;
 
 	if (i < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
+
+	c = (unsigned char *)main;
+	j = 0;
 
 	if (i > 0)
 	{
