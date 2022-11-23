@@ -10,14 +10,10 @@
 
 int main(int argc, char *argv[])
 {
-	int a, b, count;
+	int a, b;
 	unsigned char *c;
 
-	count = 0;
-	while (argv[count])
-		count++;
-
-	if (count != 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
@@ -27,7 +23,7 @@ int main(int argc, char *argv[])
 	b = 0;
 	c = (unsigned char *)main;
 
-	if (a < 0 && count == 2)
+	if (a < 0)
 	{
 		printf("Error\n");
 		exit(2);
@@ -36,7 +32,7 @@ int main(int argc, char *argv[])
 	if (a > 0)
 	{
 		while (b < (a - 1))
-			printf("%hhx", c[b++]);
+			printf("%02hhx", c[b++]);
 		printf("%hhx\n", c[b]);
 	}
 	return (0);
