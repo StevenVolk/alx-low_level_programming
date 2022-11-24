@@ -16,7 +16,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	listint_t *new_node;
 	listint_t *head_cp;
 
-	heap_cp = *head;
+	head_cp = *head;
 	while (head_cp->next)
 		head_cp = head_cp->next;
 	new_node = malloc(sizeof(listint_t));
