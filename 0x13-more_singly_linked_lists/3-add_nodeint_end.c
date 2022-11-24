@@ -17,14 +17,14 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	listint_t *head_cp;
 
 	head_cp = *head;
-	while (head_cp->next)
-		head_cp = head_cp->next;
 	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
 		return (NULL);
-	head_cp->next = new_node;
 	new_node->n = n;
 	new_node->next = NULL;
+	while (head_cp->next)
+		head_cp = head_cp->next;
+	heap_cp->next = new_node;
 
 	return (*head);
 }
