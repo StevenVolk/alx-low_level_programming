@@ -10,40 +10,40 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new;
-	char *cp_name, *cp_owner;
+	char *c_name, *c_owner;
 	int s, i = 0, j = 0;
 
 	while (name[i])
 		i++;
 	while (owner[j])
 		j++;
-	cp_name = malloc(i + 1), cp_owner = malloc(j + 1), new = malloc(sizeof(dog_t));
-	if (cp_name == NULL)
+	c_name = malloc(i + 1), c_owner = malloc(j + 1), new = malloc(sizeof(dog_t));
+	if (c_name == NULL)
 	{
-		free(cp_name);
+		free(c_name);
 		return (NULL);
 	}
 	for (s = 0; name[s]; s++)
 	{
-		cp_name[s] = name[s];
+		c_name[s] = name[s];
 	}
-	cp_name[s] = '\0';
-	if (cp_owner == NULL)
+	c_name[s] = '\0';
+	if (c_owner == NULL)
 	{
-		free(cp_name), free(cp_owner);
+		free(c_name), free(c_owner);
 		return (NULL);
 	}
 	for (s = 0; owner[s]; s++)
 	{
-		cp_owner[s] = owner[s];
+		c_owner[s] = owner[s];
 	}
-	cp_owner[s] = '\0';
+	c_owner[s] = '\0';
 	if (new == NULL)
 	{
-		free(cp_name), free(cp_owner), free(new);
+		free(c_name), free(c_owner), free(new);
 		return (NULL);
 	}
-	new->name = cp_name, new->age = age, new->owner = cp_owner;
+	new->name = c_name, new->age = age, new->owner = c_owner;
 	if (new)
 		return (new);
 	return (NULL);
