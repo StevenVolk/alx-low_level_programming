@@ -17,18 +17,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		i++;
 	while (owner[j])
 		j++;
-	cp_name = malloc(i + 1);
+	cp_name = malloc(i + 1), cp_owner = malloc(j + 1);
 	if (cp_name == NULL)
-	{
-		free(cp_name);
-		return (NULL);
-	}
+		free(cp_name), return (NULL);
 	for (s = 0; name[s]; s++)
 	{
 		cp_name[s] = name[s];
 	}
 	cp_name[s] = '\0';
-	cp_owner = malloc(j + 1);
 	if (cp_owner == NULL)
 	{
 		free(cp_name), free(cp_owner);
