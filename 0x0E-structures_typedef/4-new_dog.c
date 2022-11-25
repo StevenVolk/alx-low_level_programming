@@ -16,10 +16,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int s;
 	int i = 0, j = 0;
 
-	while (name[i])
+	while (name)
 		i++;
 
-	while (owner[j])
+	while (owner)
 		j++;
 
 	cp_name = malloc(i + 1);
