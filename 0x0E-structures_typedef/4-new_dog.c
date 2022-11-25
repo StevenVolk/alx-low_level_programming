@@ -1,7 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
-
 /**
  * new_dog - store a copy of name and owner
  * @name: name of new_dog
@@ -13,15 +11,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new;
 	char *cp_name, *cp_owner;
-	int s;
-	int i = 0, j = 0;
+	int s, i = 0, j = 0;
 
 	while (name[i])
 		i++;
-
 	while (owner[j])
 		j++;
-
 	cp_name = malloc(i + 1);
 	if (cp_name == NULL)
 	{
@@ -33,7 +28,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		cp_name[s] = name[s];
 	}
 	cp_name[s] = '\0';
-
 	cp_owner = malloc(j + 1);
 	if (cp_owner == NULL)
 	{
@@ -46,13 +40,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		cp_owner[s] = owner[s];
 	}
 	cp_owner[s] = '\0';
-
 	new = malloc(sizeof(dog_t));
 	if (new == NULL)
 	{
-		free(cp_name);
-		free(cp_owner);
-		free(new);
+		free(cp_name), free(cp_owner), free(new);
 		return (NULL);
 	}
 	new->name = cp_name;
@@ -60,6 +51,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new->owner = cp_owner;
 	if (new)
 		return (new);
-	else
-		return (NULL);
+	return (NULL);
 }
