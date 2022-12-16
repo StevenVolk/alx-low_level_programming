@@ -40,13 +40,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	current_node = *h;
 	if (current_node == NULL && idx == 0)
-		return(add_dnodeint(h, n));
+		return (add_dnodeint(h, n));
 
 	length = find_length(current_node);
 	if (length == 0)
-		return(add_dnodeint(h, n));
+		return (add_dnodeint(h, n));
 	else if (length == idx)
-		return(add_dnodeint_end(h, n));
+		return (add_dnodeint_end(h, n));
 
 	while (current_node)
 	{
