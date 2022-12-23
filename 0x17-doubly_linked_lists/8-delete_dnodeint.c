@@ -31,7 +31,7 @@ unsigned int find_length(dlistint_t *head)
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *current = NULL;
+	dlistint_t *current;
 	unsigned int i = 0, length;
 
 	current = *head;
@@ -50,18 +50,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(current);
 		return (1);
 	}
-	if (index == length - 1)
-	{
-		current->prev->next = current->next;
-		free(current);
-		return (1);
-	}
 	while (current)
 	{
-		if (i == index - 1)
+		if (i == index)
 		{
+			if (index != length - 1)
+				current->next->prev = current->prev;
 			current->prev->next = current->next;
-			current->next->prev = current->prev;
 			free(current);
 			return (1);
 		}
