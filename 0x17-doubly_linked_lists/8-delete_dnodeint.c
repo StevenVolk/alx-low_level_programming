@@ -5,7 +5,7 @@
 
 /**
  * find_length - finds the length of a dlistint_t list
- * head: head of a dlistint_t list
+ * @head: head of a dlistint_t list
  * Return: length of the dlistint_t list
  */
 
@@ -13,7 +13,7 @@ unsigned int find_length(dlistint_t *head)
 {
 	unsigned int i = 0;
 
-	while(head)
+	while (head)
 	{
 		i++;
 		head = head->next;
