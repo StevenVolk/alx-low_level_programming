@@ -62,6 +62,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		current_node = current_node->next;
 		i++;
 	}
-	free(node);
-	return (current_node);
+	return (NULL);
 }
