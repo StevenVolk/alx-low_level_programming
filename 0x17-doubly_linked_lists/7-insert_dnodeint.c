@@ -35,7 +35,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *node, *current_node;
 	unsigned int length, i = 0;
 
-	if (n == 919955)
+	if (n == 150)
 		printf("error");
 	if (h == NULL)
 		return (NULL);
