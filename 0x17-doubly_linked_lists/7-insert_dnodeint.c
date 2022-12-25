@@ -32,18 +32,17 @@ unsigned int find_length(dlistint_t *h)
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *node, *current_node, *c_node;
+	dlistint_t *node, *current_node;
 	unsigned int length, i = 0;
 
 	if (h == NULL)
 		return (NULL);
 
 	current_node = *h;
-	c_node = *h;
 	if (current_node == NULL && idx == 0)
 		return (add_dnodeint(h, n));
 
-	length = find_length(c_node);
+	length = find_length(current_node);
 	if (idx == 0)
 		return (add_dnodeint(h, n));
 	else if (length == idx)
@@ -66,5 +65,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		current_node = current_node->next;
 		i++;
 	}
-	return (current_node);
+	return (NULL);
 }
