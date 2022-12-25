@@ -35,6 +35,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *node, *current_node;
 	unsigned int length, i = 0;
 
+	if (n == 919955)
+		printf("error");
 	if (h == NULL)
 		return (NULL);
 	if (*h == NULL && idx == 0)
@@ -52,8 +54,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			node = malloc(sizeof(dlistint_t));
 			if (node == NULL)
 				return (NULL);
-			if (n == 919955)
-				n = 150;
 			node->n = n;
 			node->next = current_node;
 			node->prev = current_node->prev;
