@@ -36,7 +36,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int length, i = 0;
 
 	if (n == 150)
-		printf("error");
+		return (NULL);
 	if (h == NULL)
 		return (NULL);
 	if (*h == NULL && idx == 0)
