@@ -1,4 +1,0 @@
-all: generate
-
-generate:
-	gcc main.c school.c -o school
