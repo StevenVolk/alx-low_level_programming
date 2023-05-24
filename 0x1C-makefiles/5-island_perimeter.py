@@ -9,8 +9,8 @@ def island_perimeter(grid):
     rows = len(grid)
     columns = len(grid[0])
 
-    for i in range(0, rows-1):
-        for j in range(0, columns-1):
+    for i in range(0, rows):
+        for j in range(0, columns):
             if grid[i][j] == 1:
                 if i == 0 or grid[i-1][j] == 0:
                     perimeter += 1
